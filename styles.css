@@ -1,0 +1,104 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.avatar {
+    width: 150px;
+    height:180px;
+    border-bottom: 6px solid  #B3B3B3;
+    border-left:6px solid #555658 ;
+    border-right:6px solid #555658 ;
+    border-top:6px solid #B3B3B3;
+    border-radius: 10px;
+    transition: box-shadow 2.3s ease;
+    box-shadow: none; 
+    cursor: pointer;
+    }
+    
+.avatar:hover {
+    
+  box-shadow: 0 0 15px 5px #2F2F2F;
+  /* Glow effect on hover */
+  transform: scale(1.05);
+    
+}
+
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #1d3557, 0 0 20px #1d3557, 0 0 30px #264653;
+  }
+  12.5% {
+    text-shadow: 0 0 7px #ffffff, 0 0 12px #1d3557, 0 0 22px #1d3557, 0 0 32px #264653;
+  }
+  25% {
+    text-shadow: 0 0 10px #ffffff, 0 0 15px #1d3557, 0 0 25px #264653, 0 0 35px #264653;
+  }
+  37.5% {
+    text-shadow: 0 0 12px #ffffff, 0 0 18px #1d3557, 0 0 28px #264653, 0 0 38px #264653;
+  }
+  50% {
+    text-shadow: 0 0 15px #ffffff, 0 0 20px #1d3557, 0 0 40px #264653, 0 0 60px #264653;
+  }
+  62.5% {
+    text-shadow: 0 0 12px #ffffff, 0 0 18px #1d3557, 0 0 28px #264653, 0 0 38px #264653;
+  }
+  75% {
+    text-shadow: 0 0 10px #ffffff, 0 0 15px #1d3557, 0 0 25px #264653, 0 0 35px #264653;
+  }
+  87.5% {
+    text-shadow: 0 0 7px #ffffff, 0 0 12px #1d3557, 0 0 22px #1d3557, 0 0 32px #264653;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #1d3557, 0 0 20px #264653, 0 0 30px #264653;
+  }
+}
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #808081;
+    color: #555658;
+    border-bottom: 6px solid #555658;
+    border-left:6px solid #B3B3B3 ;
+    border-right:6px solid #B3B3B3 ;
+    border-top:6px solid #555658;
+    border-radius: 10px;
+    }
+    
+.card-text {
+  font-size: 24px;
+  color: #2F2F2F; /* Set a base color for the text */
+  animation: text-glow 3s infinite; /* Continuous glowing animation */
+}
+
+   
+
+.border-blue {
+    border: 5px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+-
+- shuffle the layout
+
+
+*/
+
+/*   
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
